@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Repeat the pattern back to win the game!
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <p id="timer"/>
+    <div id="gameArea">
+      <audio src="https://cdn.glitch.com/c018c04e-99c0-4379-a5ed-be0f10be94a4%2F054429871-diamond-whoosh.m4a?v=1616551395538" id="b1a"></audio>
+      <audio src="https://cdn.glitch.com/c018c04e-99c0-4379-a5ed-be0f10be94a4%2Fcamera-shutter-click-01.wav?v=1616551398815" id="b2a"></audio>
+      <audio src="https://cdn.glitch.com/c018c04e-99c0-4379-a5ed-be0f10be94a4%2Fmixkit-static-electric-crackles-1455.wav?v=1616551399221" id="b3a"></audio>
+      <audio src="https://cdn.glitch.com/c018c04e-99c0-4379-a5ed-be0f10be94a4%2F058784791-snow-tension-creak.m4a?v=1616551395574" id="b4a"></audio>
+      <audio src="https://cdn.glitch.com/c018c04e-99c0-4379-a5ed-be0f10be94a4%2Fbaby-laughing-07.wav?v=1616551399983" id="b5a"></audio>
+      <audio src="https://cdn.glitch.com/c018c04e-99c0-4379-a5ed-be0f10be94a4%2F045951168-socket-wrench-2.m4a?v=1616551394965" id="b6a"></audio>
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone(1)"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone(2)"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone(3)"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone(4)"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone(5)"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone(6)"></button>
+    </div>
+  </body>
+</html>
