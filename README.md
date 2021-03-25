@@ -58,7 +58,7 @@ Here's a walkthrough of implemented user stories:
 
 While following the tutorial, i got stuck at the part where it asked us to implement sounds for different buttons. The tutorial suggested that it would only take an AudioContext object to generate sound, but it didn't seem to work on my end. I tried switching browsers, devices, but nothing worked. The next step i took to diagnose the issue was pull up the javascript console and look up if there was an error being generated everytime a sound was being played. I've previously used github and stackoverflow to search up problems and after about half an hour, i was at the root of the issue. It turns out that the updated AudioContext requires a user action in order to activate audio on the page. I fixed it using a line from github. This also made realise that this apparent feature could also be the reason why youtube videos dont automatically start playing when you open them in a new tab.
 
-Implementing the timer also proved to be challenge. While placing the actual visual element was relatively easy, making it function correctly was relatively hard. Javascript seems to behave in a weird way, where it would start the time before the cue would finish playing even thought the code to initiate the timer was placed after it. I
+Implementing the timer also proved to be challenge. While placing the actual visual element was relatively easy, making it function correctly was relatively hard. Javascript seems to behave in a weird way, where it would start the time before the cue would finish playing even thought the code to initiate the timer was placed after it. I fixed it by delaying the timer by the time it takes for every play sequence to complete using the setTimeout function.
 
 
 
