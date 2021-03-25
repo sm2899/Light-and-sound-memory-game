@@ -159,7 +159,7 @@ function stopTone(btn){
 function timer(){
   document.getElementById("timer").innerText=time;
   if(time>=0){time-=1;}
-  if(time==-100){
+  if(time<0){
     mistake();
   }
   

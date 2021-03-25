@@ -7,7 +7,8 @@ Submitted by: **Sarthak Mital**
 
 Time spent: 15 hours spent in total
 
-Link to project: https://glitch.com/edit/#!/sassy-materialistic-marble
+Link to project: https://glitch.![](https://i.imgur.com/APjCXbb.gif)
+com/edit/#!/sassy-materialistic-marble
 
 ## Required Functionality
 
